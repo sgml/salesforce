@@ -19,7 +19,7 @@
                         
                         <td>
                             <tr>
-                                <td>
+                                <td style="background-color="{!obj.color__c}">
                                     <apex:outputText value="{!obj.quarter__c}"/>
                                 </td>
                                 <td>
