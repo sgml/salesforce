@@ -1,0 +1,39 @@
+<apex:page controller="AccountReviewControllerExample">
+    
+    <apex:pageBlock >
+        <table>
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th>Quarter</th>
+                    <th>Year</th>
+                    <th>AccountRank</th>
+                </tr>
+            </thead>
+            <tbody>
+                <apex:repeat value="{!recordMap}" var="key">
+                    <td rowspan="4">
+                        <apex:outputText value="{!key}"/>
+                    	</td>
+                    <apex:repeat value="{!recordMap[key]}" var="obj">
+                        
+                        <td>
+                            <tr>
+                                <td>
+                                    <apex:outputText value="{!obj.quarter__c}"/>
+                                </td>
+                                <td>
+                                    <apex:outputText value="{!obj.year__c}"/>
+                                </td>
+                                <td>
+                                    <apex:outputText value="{!obj.accountrank__c}"/>
+                                </td>
+                            </tr>
+                        </td>   
+                    </apex:repeat>
+                    
+                </apex:repeat>
+            </tbody>
+        </table>
+    </apex:pageBlock>
+</apex:page>
