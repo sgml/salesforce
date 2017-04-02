@@ -1,5 +1,5 @@
 # salesforce
-high level repository to store apex, lightning and visual force code
+This repository is designed provide working examples for people to see. 
 
 https://github.com/mailtoharshit/awesome-salesforce
 
